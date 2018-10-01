@@ -1,1 +1,8 @@
 #!/bin/bash
+
+cd /tmp/src/
+
+GO111MODULE=on go build -v -o goapp
+
+mkdir /app
+cp goapp /app/
