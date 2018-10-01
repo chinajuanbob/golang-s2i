@@ -1,5 +1,7 @@
 FROM golang
 
+ENV PORT=8080
+
 LABEL io.k8s.description="Platform for building golang applications with GO111 modules"
       io.k8s.display-name="Acomodeo golang S2I builder 1.0"
       io.openshift.expose-services="$PORT:http"
