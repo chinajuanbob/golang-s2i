@@ -12,4 +12,9 @@ COPY s2i /usr/local/s2i
 
 EXPOSE $PORT
 
+RUN mkdir /.cache /app &&\
+    chown -r 1001 /.cache /app /go
+
 USER 1001
+
+
