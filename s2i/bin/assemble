@@ -1,7 +1,8 @@
 #!/bin/bash
 
 if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
-    mv /tmp/artifacts/* /
+    mv /tmp/artifacts/go/* /go/
+    mv /tmp/artifacts/.cache/* /.cache/
 fi
 
 cd /tmp/src/
