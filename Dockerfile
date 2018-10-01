@@ -11,3 +11,5 @@ LABEL io.openshift.s2i.scripts-url=image:///usr/local/s2i/bin
 COPY s2i /usr/local/s2i
 
 EXPOSE $PORT
+
+USER 1001
