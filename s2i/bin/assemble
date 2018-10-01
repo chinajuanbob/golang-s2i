@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ "$(ls /tmp/s2i/artifacts/ 2>/dev/null)" ]; then
-    mv /tmp/s2i/artifacts/* /
+if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
+    mv /tmp/artifacts/* /
 fi
 
 cd /tmp/src/
