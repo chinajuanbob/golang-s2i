@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ "$(ls /tmp/s2i/artifacts/ 2>/dev/null)" ]; then
+    mv /tmp/s2i/artifacts/* /
+fi
+
 cd /tmp/src/
 
 GO111MODULE=on go build -v -o goapp
