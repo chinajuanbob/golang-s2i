@@ -8,9 +8,9 @@ fi
 cd /tmp/src/
 
 START=$(date +%s%N)
-GO111MODULE=on go build -v -o goapp
+GO111MODULE=on make build
 END=$(date +%s%N)
 DIFF=$((($END - $START)/1000000))
 echo App built in $DIFF ms.
 
-cp goapp /app/
+cp build/* /app/
