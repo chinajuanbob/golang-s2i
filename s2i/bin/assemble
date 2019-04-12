@@ -8,6 +8,7 @@ fi
 cd /tmp/src/
 
 START=$(date +%s%N)
+GOPROXY=https://goproxy.io
 GO111MODULE=on make build
 END=$(date +%s%N)
 DIFF=$((($END - $START)/1000000))
